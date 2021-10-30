@@ -68,23 +68,47 @@ function deleteTask(index){
 
 
 
+// function ThisIsTheFunction(temp,temp2){
+//     if(temp2 == true) {
+//         if (taskObj.length < 2){
+//             isOrAre.innerHTML = "is";
+//             numberTask.innerHTML = taskObj.length -=1;
+//         } else if (taskObj.length > 1  ){
+//             isOrAre.innerHTML = "are";
+//             numberTask.innerHTML = taskObj.length -=1;
+//         }
+//     }
+//     else {
+//         if (taskObj.length < 2){
+//             isOrAre.innerHTML = "is";
+//             numberTask.innerHTML = taskObj.length +=1  ;
+//         }else if (taskObj.length > 1  ){
+//             isOrAre.innerHTML = "are";
+//             numberTask.innerHTML = taskObj.length +=1;
+//         }
+//     }
+// }
+
 function ThisIsTheFunction(temp,temp2){
     if(temp2 == true) {
+
+        taskObj.length -=1;
         if (taskObj.length < 2){
             isOrAre.innerHTML = "is";
-            numberTask.innerHTML = taskObj.length -=1;
-        } else {
+            numberTask.innerHTML = taskObj.length;
+        } else if (taskObj.length > 1  ){
             isOrAre.innerHTML = "are";
-            numberTask.innerHTML = taskObj.length -=1;
+            numberTask.innerHTML = taskObj.length;
         }
     }
     else {
+        taskObj.length +=1 
         if (taskObj.length < 2){
             isOrAre.innerHTML = "is";
-            numberTask.innerHTML = taskObj.length +=1  ;
-        } else {
+            numberTask.innerHTML = taskObj.length;
+        }else if (taskObj.length > 1  ){
             isOrAre.innerHTML = "are";
-            numberTask.innerHTML = taskObj.length +=1 ;
+            numberTask.innerHTML = taskObj.length;
         }
     }
 }
