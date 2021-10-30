@@ -4,6 +4,7 @@ let buttonAdd = document.getElementById("buttonAdd");
 
 let numberTask = document.getElementById("numberTask");
 let isOrAre = document.getElementById("isOrAre");
+let sOrNot = document.getElementById("sOrNot");
 let nameTask = document.getElementById("nameTask");
 
 let sentence = document.getElementById("sentence");
@@ -49,10 +50,12 @@ function showTask(){
        
             isOrAre.innerHTML = "is";
             numberTask.innerHTML = taskObj.length;
+            sOrNot.innerHTML = "task"
        
     } else if (taskObj.length > 1  ){
         isOrAre.innerHTML = "are";
         numberTask.innerHTML = taskObj.length;
+        sOrNot.innerHTML = "tasks"
     }
    
     allTaskAdded.innerHTML = html;
@@ -67,28 +70,6 @@ function deleteTask(index){
 }
 
 
-
-// function ThisIsTheFunction(temp,temp2){
-//     if(temp2 == true) {
-//         if (taskObj.length < 2){
-//             isOrAre.innerHTML = "is";
-//             numberTask.innerHTML = taskObj.length -=1;
-//         } else if (taskObj.length > 1  ){
-//             isOrAre.innerHTML = "are";
-//             numberTask.innerHTML = taskObj.length -=1;
-//         }
-//     }
-//     else {
-//         if (taskObj.length < 2){
-//             isOrAre.innerHTML = "is";
-//             numberTask.innerHTML = taskObj.length +=1  ;
-//         }else if (taskObj.length > 1  ){
-//             isOrAre.innerHTML = "are";
-//             numberTask.innerHTML = taskObj.length +=1;
-//         }
-//     }
-// }
-
 function ThisIsTheFunction(temp,temp2){
     if(temp2 == true) {
 
@@ -96,9 +77,11 @@ function ThisIsTheFunction(temp,temp2){
         if (taskObj.length < 2){
             isOrAre.innerHTML = "is";
             numberTask.innerHTML = taskObj.length;
+            sOrNot.innerHTML = "task"
         } else if (taskObj.length > 1  ){
             isOrAre.innerHTML = "are";
             numberTask.innerHTML = taskObj.length;
+            sOrNot.innerHTML = "tasks"
         }
     }
     else {
@@ -106,9 +89,11 @@ function ThisIsTheFunction(temp,temp2){
         if (taskObj.length < 2){
             isOrAre.innerHTML = "is";
             numberTask.innerHTML = taskObj.length;
+            sOrNot.innerHTML = "task"
         }else if (taskObj.length > 1  ){
             isOrAre.innerHTML = "are";
             numberTask.innerHTML = taskObj.length;
+            sOrNot.innerHTML = "tasks"
         }
     }
 }
