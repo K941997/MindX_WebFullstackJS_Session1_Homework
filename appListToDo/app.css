@@ -1,0 +1,24 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+   
+}
+#container {
+    margin-top: 50px;
+    width: 1000px;
+    height: 800px;
+    background-color: white;
+}
+
+
+
+.checkbox {
+    margin-left: 1px;
+}
+
+.task {
+    margin-left: 20px;
+}

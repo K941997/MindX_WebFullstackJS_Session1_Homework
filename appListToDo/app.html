@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <title>App List To Do</title>
+
+    <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+    <div id="container">
+
+        <form class="input input-group mb-3" onsubmit="onFormAdd();">
+            <input type="text" id="inputNewTask" class=" form-control" placeholder="Enter new to do" aria-label="Enter new to do" aria-describedby="button-addon2">
+            <button id="buttonAdd" class=" btn btn btn-primary " type="button" > Add </button>
+        </form>
+
+        <h3 id="sentence" > There <span id="isOrAre"> is </span>  <span id="numberTask"> 0 </span>  task to do </h3>
+
+        <table id="allTaskAdded" class="table table-striped mt-3 mb-0">
+            <tr class="taskAdded">
+                <td><input id="checkboxTaskAdded" type="checkbox" ></td>
+                <td> <span id="nameTask"> Task Example</span></td>
+                <td><button id="buttonDelete" onclick="deleteTask()" type="button" class=" btn btn-danger"> Delete </button></td> 
+            </tr>
+        </table>
+       
+
+    </div>
+   <script language="javascript" src="app.js"></script>
+</body>
+</html>
